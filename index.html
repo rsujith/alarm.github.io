@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class='toggle'>
+        <label class="switch">
+            <input id='darkMode' type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <main class='body'>
+        
+        <h1 style="text-align: center; color: aliceblue;" id='heading'>Alarm</h1>
+        
+            
+        
+        <main class="mainContainer">
+            <section class="head">
+                <h1 id="head"></h1>
+            </section>
+            <section class="setAlarm">
+                    <div>
+    
+                    <select class="selectTime" name="hour" id="choose-hour">
+                            <!-- <option value="">--Please choose an option--</option> -->
+                    </select>
+                    <span>:</span>
+                    <select class="selectTime" name="minutes" id="choose-minutes">
+                        <!-- <option value="">--Please choose an option--</option> -->
+    
+                </select>
+                <span>:</span>
+                <select class="selectTime" name="secs" id="choose-secs">
+                    <!-- <option value="">--Please choose an option--</option> -->
+    
+            </select>
+                    
+                    <select class="selectTime" name="am-pm" id="choose-am-pm">
+                        <!-- <option value="">--Please choose an option--</option> -->
+                        <option>AM</option>
+                        <option>PM</option>
+                    </select>
+                </div>
+                <div>
+                    <button id='setAlarm'>Set Alarm</button>
+                </div>
+                    
+                
+            </section>
+            <section class="alarmSection" id='alarmSection'>
+                <h3>Alarms</h3>
+                <!-- <div class="alarmDisplayItem">
+                    <h4>03:05:49 PM</h4>
+                    <button>Delete</button>
+                </div>
+                <div class="alarmDisplayItem">
+                    <h4>03:05:49 PM</h4>
+                    <button>Delete</button>
+                </div> -->
+            </section>
+            <audio src="./random-beep-76811.mp3" ></audio>
+        </main>
+    </main>
+    
+    <script src="index.js" ></script>
+</body>
+</html>
